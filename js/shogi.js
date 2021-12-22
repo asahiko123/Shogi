@@ -1,21 +1,49 @@
-// const test = document.getElementById('fu');
-// console.log(test);
+//クリックした駒を特定する
 
+nodes = document.getElementsByClassName('piece');
+
+for(let i= 0; i < nodes.length; i++ ){
+    nodes[i].addEventListener('click',function(){
+        console.log(nodes[i]);
+    })
+}
+
+
+let tegoma =[];
+const pieceName =['歩','飛','角','香','桂','金','銀'];
 
 
 class Shogi{
 
-    //ゲームの初期化
+    //ゲームの初期化 駒やプレイヤーの状態、盤面のリセット
+
+    //今のターンは先手番or後手番
+
+    //先手後手をランダムに決める
+
+    //ゲームの終了処理
+
+    //クリックした駒の特定
+
+
 
 
 }
 
+class Player{
+
+    constructor(sides,tegoma){
+        this.sides = sides;
+        this.tegoma = tegoma;
+    }
+}
+
 class Piece{
 
-    constructor(){
+    constructor(position,sides,pieceName){
         this.position = position;
         this.sides = sides;
-        this.name  = name;
+        this.pieceName = pieceName;
     }
 
     //駒の状態
