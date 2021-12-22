@@ -565,6 +565,14 @@ main{
     cursor: pointer;
 }
 
+.board > div.sq13.vacant{
+    grid-area: sq13;
+}
+
+.board > div.sq19.vacant{
+    grid-area: sq19;
+}
+
 .board > div.line {
     height: 100%;
     width: 100%;
