@@ -251,266 +251,318 @@ main{
 .board > div.sq43.white{
     background-color:cornflowerblue;
     grid-area: sq43;
-    
+    cursor: pointer;
 }
 
 .board > div.sq53.white{
     background-color:cornflowerblue;
     grid-area: sq53;
+    cursor: pointer;
 }
 
 .board > div.sq63.white{
     background-color:cornflowerblue;
     grid-area: sq63;
+    cursor: pointer;
 }
 
 .board > div.sq73.white{
     background-color:cornflowerblue;
     grid-area: sq73;
+    cursor: pointer;
 }
 
 .board > div.sq83.white{
     background-color:cornflowerblue;
     grid-area: sq83;
+    cursor: pointer;
 }
 
 .board > div.sq93.white{
     background-color:cornflowerblue;
     grid-area: sq93;
+    cursor: pointer;
 }
 
 .board > div.sq15.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq15;
+    cursor: pointer;
 }
 
 .board > div.sq19.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq19;
+    cursor: pointer;
 }
 
 .board > div.sq29.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq29;
+    cursor: pointer;
 }
 
 .board > div.sq39.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq39;
+    cursor: pointer;
 }
 
 .board > div.sq49.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq49;
+    cursor: pointer;
 }
 
 .board > div.sq59.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq59;
+    cursor: pointer;
 }
 
 .board > div.sq69.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq69;
+    cursor: pointer;
 }
 
 .board > div.sq79.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq79;
+    cursor: pointer;
 }
 
 .board > div.sq89.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq89;
+    cursor: pointer;
 }
 
 .board > div.sq99.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq99;
+    cursor: pointer;
 }
 
 .board > div.sq17.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq17;
+    cursor: pointer;
 }
 
 .board > div.sq29.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq29;
+    cursor: pointer;
 }
 .board > div.sq28.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq28;
+    cursor: pointer;
 }
 
 .board > div.sq35.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq35;
+    cursor: pointer;
 }
 
 .board > div.sq17.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq17;
+    cursor: pointer;
 }
 
 .board > div.sq27.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq27;
+    cursor: pointer;
 }
 
 .board > div.sq37.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq37;
+    cursor: pointer;
 }
 
 .board > div.sq47.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq47;
+    cursor: pointer;
 }
 
 
 .board > div.sq57.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq57;
+    cursor: pointer;
 }
 
 .board > div.sq67.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq67;
+    cursor: pointer;
 }
 
 .board > div.sq77.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq77;
+    cursor: pointer;
 }
 
 .board > div.sq78.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq78;
+    cursor: pointer;
 }
 
 .board > div.sq87.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq87;
+    cursor: pointer;
 }
 
 .board > div.sq97.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq97;
+    cursor: pointer;
 }
 
 .board > div.sq99.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq99;
+    cursor: pointer;
 }
 
 .board > div.sq81.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq81;
+    cursor: pointer;
 }
 
 .board > div.sq88.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq88;
+    cursor: pointer;
 }
 
 .board > div.sq66.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq66;
+    cursor: pointer;
 }
 
 .board > div.sq11.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq11;
+    cursor: pointer;
 }
 
 .board > div.sq12.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq12;
+    cursor: pointer;
 }
 
 .board > div.sq13.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq13;
+    cursor: pointer;
 }
 
 .board > div.sq14.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq14;
+    cursor: pointer;
 }
 
 .board > div.sq15.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq15;
+    cursor: pointer;
 }
 
 .board > div.sq16.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq16;
+    cursor: pointer;
 }
 
 .board > div.sq21.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq21;
+    cursor: pointer;
 }
 .board > div.sq23.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq23;
+    cursor: pointer;
 }
 
 .board > div.sq32.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq32;
+    cursor: pointer;
 }
 
 .board > div.sq33.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq33;
+    cursor: pointer;
 }
 
 .board > div.sq34.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq34;
+    cursor: pointer;
 }
 
 .board > div.sq41.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq41;
+    cursor: pointer;
 }
 
 .board > div.sq45.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq45;
+    cursor: pointer;
 }
 
 .board > div.sq52.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq52;
+    cursor: pointer;
 }
 
 .board > div.sq54.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq54;
+    cursor: pointer;
 }
 
 .board > div.sq62.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq62;
+    cursor: pointer;
 }
 
 .board > div.sq85.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq85;
+    cursor: pointer;
 }
 
 .board > div.sq93.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq93;
+    cursor: pointer;
 }
 
 .board > div.sq66.black{
     background-color:rgb(97, 86, 243);
     grid-area: sq66;
+    cursor: pointer;
 }
 
 .board > div.line {
