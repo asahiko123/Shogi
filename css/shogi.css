@@ -148,87 +148,110 @@ main{
 .board > div.sq11.white{
     background-color:cornflowerblue;
     grid-area: sq11;
+    cursor: pointer;
 }
 
 .board > div.sq12.white{
     background-color:cornflowerblue;
     grid-area: sq12;
+    cursor: pointer;
 }
 
 .board > div.sq13.white{
     background-color:cornflowerblue;
     grid-area: sq13;
+    cursor: pointer;
 }
 
 .board > div.sq14.white{
     background-color:cornflowerblue;
     grid-area: sq14;
+    cursor: pointer;
+}
+
+.board > div.sq15.white{
+    background-color:cornflowerblue;
+    grid-area: sq15;
+    cursor: pointer;
 }
 
 .board > div.sq21.white{
     background-color:cornflowerblue;
     grid-area: sq21;
+    cursor: pointer;
 }
 
 .board > div.sq31.white{
     background-color:cornflowerblue;
     grid-area: sq31;
+    cursor: pointer;
 }
 
 .board > div.sq41.white{
     background-color:cornflowerblue;
     grid-area: sq41;
+    cursor: pointer;
 }
 
 .board > div.sq51.white{
     background-color:cornflowerblue;
     grid-area: sq51;
+    cursor: pointer;
 }
 
 .board > div.sq61.white{
     background-color:cornflowerblue;
     grid-area: sq61;
+    cursor: pointer;
 }
 
 .board > div.sq71.white{
     background-color:cornflowerblue;
     grid-area: sq71;
+    cursor: pointer;
 }
 
 .board > div.sq81.white{
     background-color:cornflowerblue;
     grid-area: sq81;
+    cursor: pointer;
 }
 
 .board > div.sq91.white{
     background-color:cornflowerblue;
     grid-area: sq91;
+    cursor: pointer;
 }
 
 .board > div.sq22.white{
     background-color:cornflowerblue;
     grid-area: sq22;
+    cursor: pointer;
 }
 
 .board > div.sq82.white{
     background-color:cornflowerblue;
     grid-area: sq82;
+    cursor: pointer;
 }
 
 .board > div.sq23.white{
     background-color:cornflowerblue;
     grid-area: sq23;
+    cursor: pointer;
 }
 
 
 .board > div.sq33.white{
     background-color:cornflowerblue;
     grid-area: sq33;
+    cursor: pointer;
 }
 
 .board > div.sq43.white{
     background-color:cornflowerblue;
     grid-area: sq43;
+    
 }
 
 .board > div.sq53.white{
@@ -256,7 +279,10 @@ main{
     grid-area: sq93;
 }
 
-
+.board > div.sq15.black{
+    background-color:rgb(97, 86, 243);
+    grid-area: sq15;
+}
 
 .board > div.sq19.black{
     background-color:rgb(97, 86, 243);
