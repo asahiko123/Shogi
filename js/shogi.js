@@ -1,17 +1,19 @@
-//クリックした駒を特定する
+//クリックした駒を特定
 
 nodes = document.getElementsByClassName('piece');
 console.log(nodes);
-
-for(let i= 1; i < nodes.length; i++ ){
+for(let i= 0; i < nodes.length; i++ ){
     nodes[i].addEventListener('click',function(){
         console.log(nodes[i]);
     })
 }
 
 
+
 let tegoma =[];
 const pieceName =['歩','飛','角','香','桂','金','銀'];
+
+
 
 
 class Shogi{
@@ -33,6 +35,10 @@ class Shogi{
     //先手と後手の交互にターンが回る
 
     //プレイヤーが駒の移動位置を指定
+
+    //クリックした駒を特定する
+
+
 
 
 
@@ -71,62 +77,123 @@ class Piece{
 
 class PieceMoving{
 
-    makeVacant(col,row,currentDiv){
+ 
+
+    makeVacant(col,row){
         const div = document.createElement('div');
-        div.className = `sq${col}${row} vacant piece`;
-        div.id = `sq${col}${row} vacant piece`;
+        div.className = `sq${col}${row} piece vacant`;
+        div.id = `sq${col}${row} vacant`;
         const parent = document.getElementById('board');
-        parent.insertBefore(div, currentDiv);
+        parent.appendChild(div);
+    }
+
+    removeVacant(col,row){
+        const div = document.getElementById(`sq${col}${row} vacant`);
+        console.log(div);
+        div.remove();
+
     }
 
 
-    //歩
-    Fu(col,row,sides){
+    //上
+    up(col,row,sides,piece,dist){
+
 
         if(sides ==='white'){
-            const fu_White = document.getElementById(`sq${col}${row} ${sides} fu`);
+            const upWhite = document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(upWhite);
            
-            fu_White.className = `sq${col}${row+1} ${sides} fu`;
-            fu_White.id = `sq${col}${row+1} ${sides} fu`;
+            upWhite.className = `sq${col}${row+dist} ${sides} piece ${piece}`;
+            upWhite.id = `sq${col}${row+dist} ${sides} ${piece}`;
 
-            this.makeVacant(col,row,fu_White);
+            this.makeVacant(col,row);
 
 
         }else{
-            const fu_black = document.getElementById(`sq${col}${row} ${sides} fu`);
+            const upBlack = document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(upBlack);
 
-            fu_black.className = `sq${col}${row-1} ${sides} fu`;
-            fu_black.id = `sq${col}${row-1} ${sides} fu`;
+            upBlack.className = `sq${col}${row-dist} ${sides} piece ${piece}`;
+            upBlack.id = `sq${col}${row-dist} ${sides} ${piece}`;
 
-            this.makeVacant(col,row,fu_black);
+            this.makeVacant(col,row);
         }
     }
-    //香車
-    Kyo(col,row,sides,dist){
+    //下
+    down(col,row,sides,piece,dist){
         if(sides === 'white'){
-            const kyo_white = document.getElementById(`sq${col}${row} ${sides} kyo`);
+            const downWhite = document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(downWhite);
+            downWhite.className = `sq${col}${row-dist} ${sides} piece ${piece}`;
+            downWhite.id = `sq${col}${row-dist} ${sides} ${piece}`;
 
-            kyo_white.className = `sq${col}${row+dist} ${sides} kyo`;
-            kyo_white.id = `sq${col}${row+dist} ${sides} kyo`;
-
-            this.makeVacant(col,row,kyo_white);
+            this.makeVacant(col,row);
 
         }else{
-            const kyo_black = document.getElementById(`sq${col}${row} ${sides} kyo`);
+            const downBlack= document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(downBlack);
+            downBlack.className = `sq${col}${row+dist} ${sides} piece ${piece}`;
+            downBlack.id = `sq${col}${row+dist} ${sides} ${piece}`;
 
-            kyo_black.className = `sq${col}${row-dist} ${sides} kyo`;
-            kyo_black.id = `sq${col}${row-dist} ${sides} kyo`;
-
-            this.makeVacant(col,row,kyo_black);
+            this.makeVacant(col,row);
         }
+    }
+
+    //右
+
+    right(col,row,sides,piece,dist){
+
+        if(sides === 'white'){
+            const downWhite = document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(downWhite);
+            downWhite.className = `sq${col+dist}${row} ${sides} piece ${piece}`;
+            downWhite.id = `sq${col+dist}${row} ${sides} ${piece}`;
+
+            this.makeVacant(col,row);
+
+        }else{
+            const downBlack= document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(downBlack);
+            downBlack.className = `sq${col-dist}${row} ${sides} piece ${piece}`;
+            downBlack.id = `sq${col-dist}${row} ${sides} ${piece}`;
+
+            this.makeVacant(col,row);
+        }
+
+    }
+
+    //左
+
+    left(col,row,sides,piece,dist){
+
+        if(sides === 'white'){
+            const downWhite = document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(downWhite);
+            downWhite.className = `sq${col-dist}${row} ${sides} piece ${piece}`;
+            downWhite.id = `sq${col-dist}${row} ${sides} ${piece}`;
+
+            this.makeVacant(col,row);
+
+        }else{
+            const downBlack= document.getElementById(`sq${col}${row} ${sides} ${piece}`);
+            console.log(downBlack);
+            downBlack.className = `sq${col+dist}${row} ${sides} piece ${piece}`;
+            downBlack.id = `sq${col+dist}${row} ${sides} ${piece}`;
+
+            this.makeVacant(col,row);
+        }
+
+
     }
 
 }
 
 const test = new PieceMoving();
 
-test.Fu(1,3,'white');
-// test.Fu(1,4,'white');
+test.right(8,8,'black','kaku',2);
+test.removeVacant(8,8);
+test.left(6,8,'black','kaku',2);
 
-test.Kyo(1,9,'black',3);
+
+
 
